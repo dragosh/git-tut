@@ -7,6 +7,10 @@ git checkout -b develop master
 git branch -a
 git checkout -b feature-one develop
 
+// Switched to branch 'develop'
 git checkout develop
 
+git merge --no-ff feature-one
 
+//delete the branch after merge
+git branch -d feature-one
