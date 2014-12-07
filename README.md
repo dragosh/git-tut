@@ -18,3 +18,13 @@ git merge --no-ff feature-one
 git branch -d feature-one
 
 git push origin develop
+
+git checkout master
+git merge --no-ff release-0.1
+git tag -a 0.1
+
+
+git checkout develop
+git merge --no-ff release-0.1
+
+git branch -d release-0.1
